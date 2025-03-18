@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Câmbio Manual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Câmbio Manual</h1>
+        
+        <div class="painel">
+            <p>Velocidade: <span id="velocidade">0</span> km/h</p>
+            <p>RPM: <span id="rpm">800</span></p>
+            <p>Marcha: <span id="marcha">N</span></p>
+            <p id="status">Motor ligado</p>
+        </div>
+
+        <div class="controles">
+            <button id="btnAcelerar">Acelerar</button>
+            <button id="btnFrear">Frear</button>
+            <button id="btnEmbreagem">Embreagem</button>
+            <button id="btnFreioMao">Freio de Mão</button>
+
+
+            <div class="cambio">
+                <button class="marchaBtn" data-marcha="R">R</button>
+                <button class="marchaBtn" data-marcha="1">1</button>
+                <button class="marchaBtn" data-marcha="2">2</button>
+                <button class="marchaBtn" data-marcha="3">3</button>
+                <button class="marchaBtn" data-marcha="4">4</button>
+                <button class="marchaBtn" data-marcha="5">5</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
